@@ -1,0 +1,5 @@
+/* CSS for Image Icons */
+img {
+    width: 20px; /* Adjust the width to decrease the size */
+    height: auto; /* Maintain the aspect ratio */
+}

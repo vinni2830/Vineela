@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+    <title>Myntra Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #ff3f6c;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar .logo img {
+            height: 40px;
+        }
+
+        .navbar .search-bar {
+            display: flex;
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .navbar .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .navbar .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .menu a img {
+            height: 24px;
+            width: 24px;
+            margin-right: 8px;
+        }
+
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Banner Section */
+        .banner {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        /* Category Section */
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .categories-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+
+        .categories-row a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 5px 15px;
+            border: 1px solid transparent;
+            transition: border-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .categories-row a img {
+            margin-right: 10px;
+        }
+
+        .categories-row a:hover {
+            color: #ff3f6c;
+            border-color: #ff3f6c;
+        }
+
+        .categories-row.icons-only a {
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .categories-row.icons-only a img {
+            margin-right: 0;
+            margin-bottom: 5px;
+        }
+
+        /* Main Content */
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: space-around;
+            background-color: #ffffff;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+            margin: 15px;
+            text-align: center;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            padding: 10px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #ff3f6c;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://up.yimg.com/ib/th?id=OIP.Bxb6QRyKNLYpzYbtvpbHDwHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121">
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands and more">
+        </div>
+
+        <div class="menu">=
+            <a href="#">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.q2hL9dn479rMRrvqO3Y6GQHaH_&pid=Api&P=0&h=220">
+                Notifications
+            </a>
+            <a href="#">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.zPZvsoMJOGIjTURW8lwnEgHaGP&pid=Api&P=0&h=220">
+                Wishlist
+            </a>
+            <a href="#">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.2H_lg8OPgAhv61IiPzEjtwHaHa&pid=Api&P=0&h=220">
+                Bag
+            </a>
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <h2>Ganesh Chathurthi Deals Await You!</h2>
+    </div>
+
+    <!-- Category Section -->
+    <div class="categories">
+        <!-- First Row of Categories with Photos -->
+        <div class="categories-row">
+            
+            <a href="#">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.y2AtMO8zXjBk7aIoUXJwXQHaHa&pid=Api&P=0&h=220">
+                Home
+            </a>
+<a href="#">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.81UMDR1t_YTmKKBrTZx4KgHaDt&pid=Api&P=0&h=220">
+                Beauty
+            </a>
+        </div>
+
+        <!-- Second Row of Categories with Icons Only -->
+        <div class="categories-row icons-only">
+            
+            <a href="#">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.qQ7JBD43wj22yFIvA7F8rgHaEK&pid=Api&P=0&h=220">
+                Festive Collection
+            </a>
+            <a href="#">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.Tdp_5YeMaqh_yiWBja_VJAAAAA&pid=Api&P=0&h=220">
+                Men
+            </a>
+            <a href="#">
+                <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/8076725/2018/12/7/943ed6af-c315-4119-8d0a-ac89311d55661544170431419-AKS-Women-Dresses-7841544170430220-1.jpg">
+                Women
+            </a>
+            <a href="#">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.tNUYfvug9-fHHVXg4Yq7nAHaJ4&pid=Api&P=0&h=220">
+                Kids
+            </a>
+            <a href="#">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.92FRb7SPtHjkvKZVHnkfzwHaJ4&pid=Api&P=0&h=220">
+                Footwear
+            </a>
+            
+            <a href="#">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.zCJ-wEyotNHM4EU9o1VFxwHaHa&pid=Api&P=0&h=220">
+                Accessories
+            </a>
+            
+            
+            
+        </div>
+    </div>
+
+     <!-- Main Content -->
+    <div class="main">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/productimage/2020/1/11/3bbc1f02-12e7-4e90-ab8a-af34d7eba1a71578702384161-1.jpg">
+            <div class="product-details">
+                <div class="product-name">Product 1</div>
+                <div class="product-price">₹3,999</div>
+            </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/10257309/2019/8/21/8102b07e-4d84-46f1-b4b2-c07a24f5c2081566388382675-Killer-Men-Shirts-8081566388381370-1.jpg">
+            <div class="product-details">
+                <div class="product-name">Product 2</div>
+                <div class="product-price">₹2,499</div>
+            </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/6934762/2018/7/24/42269c67-cff0-4b4b-ae20-2d70a6292e861532412625763-GERUA-Women-Dresses-6061532412625603-1.jpg">
+            <div class="product-details">
+                <div class="product-name">Product 3</div>
+                <div class="product-price">$5,799</div>
+            </div>
+        </div>
+        
+        <!-- More product cards can be added here -->
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2024 Myntra Clone. All rights reserved.
+    </div>
+
+</body>
+</html>
